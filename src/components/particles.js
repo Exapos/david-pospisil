@@ -75,8 +75,13 @@ const ParticlesBackground = () => {
 						value: 0.3,
 					},
 					shape: {
-						type: "circle",
-					},
+						type: "image",
+						image: {
+						  src: "/weights.jpg",
+						  width: 20,
+						  height: 20
+						}
+					  },
 					size: {
 						value: { min: 1, max: 3 },
 					},

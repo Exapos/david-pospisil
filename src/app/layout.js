@@ -7,11 +7,16 @@ export const metadata = {
   description: "Portoflio trenéra Davida Pospíšila",
 };
 
+
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/* <Header /> */}
+      <Header 
+            home={'Domu'}
+            about={'O mně'}
+            gallery={'Galerie'} />
         {children}
         {/* <Footer /> */}
       </body>

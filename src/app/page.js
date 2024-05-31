@@ -1,14 +1,13 @@
 "use client"
 import React from "react";
 import ParticlesComponent from "../components/particles";
-import Banner from "@/components/banner";
 import Accent from "@/components/accent";
 import { TypeAnimation } from 'react-type-animation'
 import Image from "next/image";
 
 const imageStyle = {
 	borderRadius: '10%',
-	border: '0.5px solid #fff',
+	border: '0.2px solid #fff',
   }
 
 export default function Home() {
@@ -16,11 +15,11 @@ export default function Home() {
 			<div className='bg-gradient-to-b from-neutral-900  to-[#c01818] '>
 				<ParticlesComponent />
 				<div className='flex flex-row text-slate-200 md:px-10 px-5 h-screen items-center justify-center'>
-			        <div className='w-1/3 p-2 sm:hidden lg:block'>
-						<Image src='/viking.png' alt='David' width={1000} height={1000} style={imageStyle}/>
+			        <div className='w-1/3 p-2 max-sm:hidden max-md:hidden'>
+						<Image src='/OIP.jpg' alt='David' width={1000} height={1000} style={imageStyle} className=""/>
 			        </div>
 			        
-			        <div className='w-1/3 text-center p-2'>
+			        <div className='w-1/3 text-center p-2 max-sm:w-full max-lg:w-1/3'>
 						<div className=' text-2xl xs:text-xl lg:text-5xl  font-bold mb-2'>
 								Zdravím!
 								<br />
@@ -59,8 +58,8 @@ export default function Home() {
 						</div>
 			        </div>
 			        
-			        <div className='w-1/3 p-2 sm:hidden lg:block'>
-						<Image src='/viking.png' alt='David' width={1000} height={1000} style={imageStyle}/>
+			        <div className='w-1/3 p-2 max-sm:hidden max-md:hidden'>
+						<Image src='/R.jpg' alt='David' width={1000} height={1000} style={imageStyle}/>
 			        </div>
 			      </div>
 			</div>
